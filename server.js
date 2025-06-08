@@ -11,7 +11,7 @@ const JWT_SECRET = process.env.JWT_SECRET || 'your-super-secret-jwt-key-change-t
 // Middleware
 app.use(cors({
   origin: [
-    'https://ai-learning-for-kids.vercel.app/', // Your actual Vercel URL
+    'https://ai-learning-for-kids.vercel.app', // Remove trailing slash
     'http://localhost:3000',
     'http://localhost:5173'
   ],
